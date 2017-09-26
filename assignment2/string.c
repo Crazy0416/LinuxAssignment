@@ -59,8 +59,12 @@ void strcat_a(char dst[], char src[])
 }
 
 int strcmp_p(char *dst, char *src){
-	int i, j;
-	
+	while(*dst != '\0' && *src != '\0'){
+		if(*dst != *src)
+			break;
+		dst++; src++;	
+	}
+	return (*dst - *src);
 }
 
 int strcmp_a(char dst[], char src[]){
@@ -87,10 +91,15 @@ main()
 
 	strcat_p(str1, ", World!");
 	strcat_a(str2, ", World!");
-	printf("strcat: p=%s, a=%s\n", str1, str2);
+	printf("strcat: p=%s, a=%s\n\n", str1, str2);
 
-	printf("same strcmp: a=%d\n", strcmp_a(str1, str2));
-	printf("1 : a=%d\n", strcmp_a("abcd", "abc"));
-	printf("2 : a=%d\n", strcmp_a("abcd", "abcdef"));
-	printf("3 : a=%d\n", strcmp_a("abcd", "adef"));
+	printf("abcd abcd return a=%d\n", strcmp_a("abcd", "abcd"));
+	printf("abcd abc : return a=%d\n", strcmp_a("abcd", "abc"));
+	printf("abcd abcdef : return a=%d\n", strcmp_a("abcd", "abcdef"));
+	printf("abcd adef : return a=%d\n\n", strcmp_a("abcd", "adef"));
+
+	printf("abcd abcd return p=%d\n", strcmp_p("abcd", "abcd"));
+        printf("abcd abc : return p=%d\n", strcmp_p("abcd", "abc"));
+        printf("abcd abcdef : return p=%d\n", strcmp_p("abcd", "abcdef"));
+        printf("abcd adef : return p=%d\n", strcmp_p("abcd", "adef"));
 }
