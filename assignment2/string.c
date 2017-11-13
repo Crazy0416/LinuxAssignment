@@ -4,8 +4,8 @@ int strlen_p(char *str)
 {
 	int	len = 0;
 
-	while (*str++)  {
-		len++;
+	while (*str++)  {	// '\0'값을 만날때까지 
+		len++;		// len 값을 추가함
 	}
 	return len;
 }
@@ -14,7 +14,7 @@ int strlen_a(char str[])
 {
 	int i;
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	for (i = 0 ; str[i] != '\0' ; i++)	// '\0'값을 만날때까지 i를 증가시킴
 		;
 	return i;
 }
@@ -22,58 +22,58 @@ int strlen_a(char str[])
 void strcpy_p(char *dst, char *src)
 {
 	while (*src)  {
-		*dst++ = *src++;
+		*dst++ = *src++;	// src의 문자열 끝까지 한글자씩 dst에 추가
 	}
-	*dst = *src;
+	*dst = *src;			// 마지막 '\0'를 while문에서 추가 못했으므로 추가
 }
 
 void strcpy_a(char dst[], char src[])
 {
 	int i;
 
-	for (i = 0 ; src[i] != '\0' ; i++)
-		dst[i] = src[i];
-	dst[i] = src[i];
+	for (i = 0 ; src[i] != '\0' ; i++)	// src의 문자열 끝까지
+		dst[i] = src[i];		// 한글자씩 dst에 추가
+	dst[i] = src[i];			// 마지막 '\0'를 for문에서 추가 못했으므로 추가
 }
 
 void strcat_p(char *dst, char *src)
 {
-	while (*dst++)
+	while (*dst++)				// dst 뒤에 src를 추가해야하므로 포인터를 문자열 마지막까지 옮김
 		;
-	dst--;
+	dst--;					// '\0'를 포함하면 안되므로 한칸 뒤로 이동
 	while (*src)  {
-		*dst++ = *src++;
+		*dst++ = *src++;		// dst에 src를 한글자씩 추가
 	}
-	*dst = *src;
+	*dst = *src;				// 마지막에 '\0'를 문자열에 추가
 }
 
 void strcat_a(char dst[], char src[])
 {
 	int i, j;
 
-	for (i = 0 ; dst[i] != '\0' ; i++)
+	for (i = 0 ; dst[i] != '\0' ; i++)	// dst 뒤에 src를 추가해야하므로 포인터를 문자열 마지막까지 옮김
 		;
-	for (j = 0 ; src[j] != '\0' ; j++)
+	for (j = 0 ; src[j] != '\0' ; j++)	// dst에 src를 한글자씩 추가
 		dst[i+j] = src[j];
-	dst[i+j] = src[j];
+	dst[i+j] = src[j];			// 마지막에 '\0'를 문자열에 추가
 }
 
 int strcmp_p(char *dst, char *src){
-	while(*dst != '\0' && *src != '\0'){
-		if(*dst != *src)
+	while(*dst != '\0' && *src != '\0'){	// 둘 중에 먼저 끝나는 문자열이 있으면 반복문 종료
+		if(*dst != *src)		// 같은 위치에 있는 문자가 다를 경우 반복문 종료
 			break;
-		dst++; src++;	
+		dst++; src++;
 	}
-	return (*dst - *src);
+	return (*dst - *src);			// 반복문 종료 후 그 위치의 문자 아스키 코드 값을 뺀 값을 리턴
 }
 
 int strcmp_a(char dst[], char src[]){
 	int i, j;
-	for(i = 0, j = 0; dst[i] != '\0' && src[j] != '\0'; i++, j++){
-		if(dst[i] != src[j])
+	for(i = 0, j = 0; dst[i] != '\0' && src[j] != '\0'; i++, j++){	// 둘 중에 먼저 끝나는 문자열이 있으면 반복문 종료
+		if(dst[i] != src[j])					// 같은 위치에 있는 문자가 다를 경우 반복문 종료
 			break;
 	}
-	return (dst[i] - src[j]);
+	return (dst[i] - src[j]);					// 반복문 종료 후 그 위치의 문자 아스키 코드 값으 뺀 값을 리턴
 }
 
 main()
