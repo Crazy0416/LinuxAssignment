@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/producer_s.dir/producer_s.cpp.o CMakeFiles/producer_s.dir/semlib.cpp.o  -o producer_s 

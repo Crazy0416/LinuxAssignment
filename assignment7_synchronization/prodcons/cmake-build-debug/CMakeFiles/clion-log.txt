@@ -1,0 +1,4 @@
+/home/kimminho/바탕화면/clion-2018.1.1/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons/cmake-build-debug

@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/consumer_s.cpp
+sys/shm.h
+-
+cstdio
+-
+cstdlib
+-
+unistd.h
+-
+prodcons.h
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/prodcons.h
+semlib.h
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/semlib.h
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/prodcons.h
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/semlib.cpp
+stdio.h
+-
+semlib.h
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/semlib.h
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/semprodcons/semlib.h
+sys/types.h
+-
+sys/ipc.h
+-
+sys/sem.h
+-
+

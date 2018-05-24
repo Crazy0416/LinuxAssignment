@@ -1,0 +1,4 @@
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons/cmake-build-debug/CMakeFiles/producer.dir
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodcons/cmake-build-debug/CMakeFiles/consumer.dir

@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/prodcons.dir/main.cpp.o  -o prodcons 
