@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/prodconsThread.dir/main.cpp.o  -o prodconsThread -lpthread 

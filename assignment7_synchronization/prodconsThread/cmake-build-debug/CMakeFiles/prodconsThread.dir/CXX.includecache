@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodconsThread/main.cpp
+iostream
+-
+semaphore.h
+-
+sys/time.h
+-
+prodcons.h
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodconsThread/prodcons.h
+
+/home/kimminho/바탕화면/my_project/cppProject/LinuxAssignment/assignment7_synchronization/prodconsThread/prodcons.h
+
